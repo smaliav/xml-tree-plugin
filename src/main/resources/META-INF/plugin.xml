@@ -15,4 +15,9 @@
         <listener class="com.github.smaliav.xmltreeplugin.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+
+    <projectListeners>
+        <listener class="com.github.smaliav.xmltreeplugin.listeners.XmlFileListener"
+                  topic="com.intellij.openapi.fileEditor.FileEditorManagerListener$Before"/>
+    </projectListeners>
 </idea-plugin>
